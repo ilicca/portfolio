@@ -1,0 +1,122 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+}
+.text-animate-hover:hover {
+  animation: rubberBand 1s;
+  color: #ffd700;
+}
+.text-animate._1 {
+  animation-delay: 1 / 10;
+}
+.text-animate._2 {
+  animation-delay: 2 / 10;
+}
+.text-animate._3 {
+  animation-delay: 3 / 10;
+}
+.text-animate._4 {
+  animation-delay: 4 / 10;
+}
+.text-animate._5 {
+  animation-delay: 5 / 10;
+}
+.text-animate._6 {
+  animation-delay: 6 / 10;
+}
+.text-animate._7 {
+  animation-delay: 7 / 10;
+}
+.text-animate._8 {
+  animation-delay: 8 / 10;
+}
+.text-animate._9 {
+  animation-delay: 9 / 10;
+}
+.text-animate._10 {
+  animation-delay: 10 / 10;
+}
+.text-animate._11 {
+  animation-delay: 11 / 10;
+}
+.text-animate._12 {
+  animation-delay: 12 / 10;
+}
+.text-animate._13 {
+  animation-delay: 13 / 10;
+}
+.text-animate._14 {
+  animation-delay: 14 / 10;
+}
+.text-animate._15 {
+  animation-delay: 15 / 10;
+}
+.text-animate._16 {
+  animation-delay: 16 / 10;
+}
+.text-animate._17 {
+  animation-delay: 17 / 10;
+}
+.text-animate._18 {
+  animation-delay: 18 / 10;
+}
+.text-animate._19 {
+  animation-delay: 19 / 10;
+}
+.text-animate._20 {
+  animation-delay: 20 / 10;
+}
+.text-animate._21 {
+  animation-delay: 21 / 10;
+}
+.text-animate._22 {
+  animation-delay: 22 / 10;
+}
+.text-animate._23 {
+  animation-delay: 23 / 10;
+}
+.text-animate._24 {
+  animation-delay: 24 / 10;
+}
+.text-animate._25 {
+  animation-delay: 25 / 10;
+}
+.text-animate._26 {
+  animation-delay: 26 / 10;
+}
+.text-animate._27 {
+  animation-delay: 27 / 10;
+}
+.text-animate._28 {
+  animation-delay: 28 / 10;
+}
+.text-animate._29 {
+  animation-delay: 29 / 10;
+}
+.text-animate._30 {
+  animation-delay: 30 / 10;
+}
+.text-animate._31 {
+  animation-delay: 31 / 10;
+}
+.text-animate._32 {
+  animation-delay: 32 / 10;
+}
+.text-animate._33 {
+  animation-delay: 33 / 10;
+}
+.text-animate._34 {
+  animation-delay: 34 / 10;
+}
+.text-animate._35 {
+  animation-delay: 35 / 10;
+}
+/*# sourceMappingURL=index.css.map */
