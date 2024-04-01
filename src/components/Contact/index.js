@@ -1,7 +1,7 @@
 import './index.css'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+//import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const strArray = ['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']
@@ -9,24 +9,24 @@ const Contact = () => {
 
     const refForm = useRef()
 
-    // const sendEmail = () => {
-    //     alert("Message successfully sent!")
-    //     window.location.reload(false)
-    // }
-    const sendEmail = (e) => {
-        e.preventDefault()
-
-        emailjs.sendForm('gmail', 'service_bw6cq2p', refForm.current, 'db6Bw0bMrb-rDwl3E')
-        .then(
-            () => {
-                alert("Message successfully sent!")
-                window.location.reload(false)
-            },
-            () => {
-                alert('Failed to send the message, please try again.')
-            }
-        )
+    const sendEmail = () => {
+        alert("Message successfully sent!")
+        window.location.reload(false)
     }
+    // const sendEmail = (e) => {
+    //     e.preventDefault()
+
+    //     emailjs.sendForm('gmail', 'service_bw6cq2p', refForm.current, 'db6Bw0bMrb-rDwl3E')
+    //     .then(
+    //         () => {
+    //             alert("Message successfully sent!")
+    //             window.location.reload(false)
+    //         },
+    //         () => {
+    //             alert('Failed to send the message, please try again.')
+    //         }
+    //     )
+    // }
 
     useEffect(() => {
         return setTimeout(() => {
