@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e8343924.chunk.css",
+    "main.js": "/static/js/main.24707005.chunk.js",
+    "main.js.map": "/static/js/main.24707005.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d05652dc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d05652dc.js.map",
+    "static/css/2.276ef6a7.chunk.css": "/static/css/2.276ef6a7.chunk.css",
+    "static/js/2.15623f0c.chunk.js": "/static/js/2.15623f0c.chunk.js",
+    "static/js/2.15623f0c.chunk.js.map": "/static/js/2.15623f0c.chunk.js.map",
+    "static/js/3.b7d7596a.chunk.js": "/static/js/3.b7d7596a.chunk.js",
+    "static/js/3.b7d7596a.chunk.js.map": "/static/js/3.b7d7596a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.276ef6a7.chunk.css.map": "/static/css/2.276ef6a7.chunk.css.map",
+    "static/css/main.e8343924.chunk.css.map": "/static/css/main.e8343924.chunk.css.map",
+    "static/js/2.15623f0c.chunk.js.LICENSE.txt": "/static/js/2.15623f0c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/helvetica-neu.8a196780.ttf",
+    "static/media/logo-a.7d2fb3f9.png": "/static/media/logo-a.7d2fb3f9.png",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
+    "static/media/logo_sub1.f443a94a.png": "/static/media/logo_sub1.f443a94a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d05652dc.js",
+    "static/css/2.276ef6a7.chunk.css",
+    "static/js/2.15623f0c.chunk.js",
+    "static/css/main.e8343924.chunk.css",
+    "static/js/main.24707005.chunk.js"
+  ]
+}
