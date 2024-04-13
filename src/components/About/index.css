@@ -1,3 +1,9 @@
+.text-zone {
+  margin-left: 30px;
+}
+.text-zone p {
+  margin-left: 30px;
+}
 .stage-cube-cont {
   width: 50%;
   height: 100%;

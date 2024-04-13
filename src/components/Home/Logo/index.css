@@ -28,6 +28,35 @@
   transform: rotateZ(30deg);
   z-index: 1;
 }
+@media screen and (max-width: 1650px) {
+  .logo-container {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 414px) {
+  .logo-container {
+    width: 200px;
+    height: 300px;
+    right: -12%;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 390px) {
+  .logo-container {
+    width: 170px;
+    height: 300px;
+    right: -12%;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 360px) {
+  .logo-container {
+    width: 150px;
+    height: 300px;
+    right: -12%;
+    visibility: visible;
+  }
+}
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10;

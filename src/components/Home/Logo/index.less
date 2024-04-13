@@ -16,6 +16,7 @@
         bottom: 0;
         transform: rotateZ(30deg) !important;
     }
+
     .solid-logo {
         position: absolute;
         top: auto;
@@ -28,7 +29,33 @@
         transform: rotateZ(30deg);
         z-index: 1;
     }
+
+    @media screen and (max-width: 1650px) {
+        visibility: hidden;
+    }
+
+    @media screen and (max-width: 414px) {
+        width: 200px;
+        height: 300px;
+        right: -12%;
+        visibility: visible;
+    }
+
+    @media screen and (max-width: 390px) {
+        width: 170px;
+        height: 300px;
+        right: -12%;
+        visibility: visible;
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 150px;
+        height: 300px;
+        right: -12%;
+        visibility: visible;
+    }
 }
+
 .svg-container {
     stroke: #ffd700;
     stroke-width: 10;

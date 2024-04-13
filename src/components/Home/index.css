@@ -1,14 +1,15 @@
 .home-page .text-zone {
   position: absolute;
-  left: 10%;
+  left: -10%;
   top: 50%;
   transform: translateY(-50%);
   width: 40%;
+  margin-left: 30%;
   max-height: 90%;
 }
 .home-page h1 {
   color: #fff;
-  font-size: 53px;
+  font-size: 63px;
   margin: 0;
   font-family: 'Coolvetica';
   font-weight: 400;
@@ -42,6 +43,21 @@
   animation: rotateIn 1s linear both;
   animation-delay: 1.4s;
 }
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  .home-page h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .home-page h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .home-page h1 {
+    font-size: 20px;
+  }
+}
 .home-page h2 {
   color: #8d8d8d;
   margin-top: 20px;
@@ -61,6 +77,7 @@
   padding: 10px 18px;
   border: 1px solid #ffd700;
   margin-top: 25px;
+  margin-bottom: 20px;
   float: left;
   animation: fadeIn 1.8s backwards;
   white-space: nowrap;
