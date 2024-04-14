@@ -1,7 +1,33 @@
-.text-zone {
-    margin-left: 30px;
+@import '../../assets/static-styles.less';
+
+@shadow-color: lightyellow;
+@animation-duration: 12s;
+
+.text-zone() {
+    margin-left: @margin-left;
+
     p {
-        margin-left: 30px;
+        margin-left: @margin-left;
+    }
+}
+
+.about-page {
+    .text-zone {
+        .text-zone;
+
+        h1 {
+            @media screen and (max-width: 414px) and (max-height: 896px) {
+                .font-size-large;
+            }
+
+            @media screen and (max-width: 390px) and (max-height: 844px) {
+                .font-size-medium;
+            }
+
+            @media screen and (max-width: 360px) {
+                .font-size-small;
+            }
+        }
     }
 }
 
@@ -14,28 +40,42 @@
     position: absolute;
     right: 0;
     overflow: hidden;
+
+    @media screen and (max-width: 414px) and (max-height: 896px) {
+        .cube-style(50%, 100%, 10px)
+    }
+
+    @media screen and (max-width: 390px) and (max-height: 844px) {
+        .cube-style(35%, 55%, 10px)
+    }
+
+    @media screen and (max-width: 360px) {
+        .cube-style(30%, 50%, 10px)
+    }
 }
 
 .cubespinner {
     animation-name: spincube;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 12s;
+    animation-duration: @animation-duration;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
+    margin-left: @cube-margin;
 
     div {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: @cube-size;
+        height: @cube-size;
         border: 1px solid #ccc;
         background: rgba(255, 255, 255, 0.4);
-        font-size: 100px;
+        font-size: (@cube-size / 2);
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px 0px lightyellow;
+        box-shadow: 0 0 20px 0px @shadow-color;
+
+
     }
 
     .face1 {

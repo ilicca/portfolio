@@ -1,6 +1,28 @@
+.contact-page .text-zone {
+  margin-left: 30px;
+}
+.contact-page .text-zone p {
+  margin-left: 30px;
+}
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  .contact-page .text-zone h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .contact-page .text-zone h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact-page .text-zone h1 {
+    font-size: 20px;
+  }
+}
 .contact-form {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 .contact-form ul {
   padding: 0;

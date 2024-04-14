@@ -1,0 +1,31 @@
+@font-size-small: 20px;
+@font-size-medium: 40px;
+@font-size-large: 48px;
+@margin-left: 30px;
+
+@form-field-bg-color: #115173;
+@primary-color: #ffd700;
+
+@cube-width: 50%;
+@cube-height: 100%;
+@cube-margin-right: 10px;
+@cube-size: 200px;
+@cube-margin: calc(50% - (@cube-size / 2));
+
+
+.cube-style(@width, @height, @margin) {
+    width: @width;
+    height: @height;
+    margin-right: @margin;
+}
+.font-size-small() {
+    font-size: @font-size-small;
+}
+
+.font-size-medium() {
+    font-size: @font-size-medium;
+}
+
+.font-size-large() {
+    font-size: @font-size-large;
+}

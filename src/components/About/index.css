@@ -1,8 +1,23 @@
-.text-zone {
+.about-page .text-zone {
   margin-left: 30px;
 }
-.text-zone p {
+.about-page .text-zone p {
   margin-left: 30px;
+}
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  .about-page .text-zone h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .about-page .text-zone h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .about-page .text-zone h1 {
+    font-size: 20px;
+  }
 }
 .stage-cube-cont {
   width: 50%;
@@ -14,6 +29,27 @@
   right: 0;
   overflow: hidden;
 }
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  .stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .stage-cube-cont {
+    width: 35%;
+    height: 55%;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .stage-cube-cont {
+    width: 30%;
+    height: 50%;
+    margin-right: 10px;
+  }
+}
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -21,7 +57,7 @@
   animation-duration: 12s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+  margin-left: calc(50% - (200px / 2));
 }
 .cubespinner div {
   position: absolute;
