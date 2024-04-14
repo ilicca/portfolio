@@ -1,0 +1,109 @@
+@primary-color: #ffd700;
+@tertiary-color: #8d8d8d;
+@white-color: #fff;
+@h1-font-family: 'La Belle Aurore';
+@font-size: 18px;
+
+.text-zone(@left, @top, @width, @marginLeft, @maxHeight) {
+    position: absolute;
+    left: @left;
+    top: @top;
+    transform: translateY(-50%);
+    width: @width;
+    margin-left: @marginLeft;
+    max-height: @maxHeight;
+}
+
+.h1-styles(@color, @font-family) {
+    color: @color;
+    font-size: 63px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &::before {
+        content: '<h1>';
+        font-family: @font-family;
+        color: @primary-color;
+        font-size: @font-size;
+        position: absolute;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+    }
+
+    &::after {
+        content: '<h1/>';
+        font-family: @font-family;
+        color: @primary-color;
+        font-size: @font-size;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+
+    }
+
+    img {
+        width: 32px;
+        margin-left: 20px;
+        opacity: 0;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+    }
+}
+
+.home-page {
+    .text-zone {
+        .text-zone(-10%, 50%, 40%, 30%, 90%);
+    }
+
+    h1 {
+        .h1-styles(@white-color, @h1-font-family);
+
+        @media screen and (max-width: 414px) and (max-height: 896px) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 390px) and (max-height: 844px) {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: 360px) {
+            font-size: 20px;
+        }
+    }
+
+    h2 {
+        color: @tertiary-color;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: @primary-color;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid @primary-color;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        float: left;
+        animation: fadeIn 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: @primary-color;
+            color: #333;
+        }
+    }
+}
